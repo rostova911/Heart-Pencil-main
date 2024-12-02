@@ -46,13 +46,97 @@
 
 h2{
     text-align: center;
+    margin-bottom: 100px;
 }
 
-img {
-    width: 150px;
-}
+
 
 .container2 {
-    height: 500px;
+    height: 600px;
     border: 1px solid red;
+}
+
+.calc{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 30%;
+    animation: calc 2s linear forwards ;
+}
+
+.book{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 40%;
+    animation: book 2s linear 2s forwards;
+    
+
+}
+
+.paper{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 50%;
+    animation: paper 2s linear 3s forwards;
+}
+
+.pallete{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 60%;
+    animation: pallete 2s linear 4s forwards;
+}
+
+.pencil{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 45%;
+    transform: rotate(90deg);
+    animation: pencil 2s linear 5s forwards;
+}
+
+@keyframes calc {
+    0%{ margin-top:500px;}
+    
+    100%{
+        margin-top: 70px;
+        transform: rotate(340deg);
+    }
+    
+}
+
+@keyframes book {
+    0%{ margin-top:500px;}
+    
+    100%{
+        margin-top: 0px;
+        transform: rotate(350deg);
+    }
+
+}
+
+@keyframes paper {
+    0%{ margin-top:500px;}
+    
+    100%{
+        margin-top: 0px;
+        transform: rotate(380deg);
+    }
+}
+
+@keyframes pallete {
+    0%{ margin-top:500px;}
+    
+    100%{
+        margin-top: 70px;
+        transform: rotate(390deg);
+    }
+}
+
+@keyframes pencil {
+    0%{ margin-top:500px;}
+    
+    100%{
+        margin-top: 150px;
+        transform: rotate(450deg);
+    }
 }
