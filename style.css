@@ -1,0 +1,58 @@
+.container{
+   display: flex;
+   justify-content: center;
+   margin-top:50px;
+   background-color: antiquewhite;
+}
+
+
+
+/*Кросс-бар*/
+.bar{
+    width: 400px;
+    height: 70px;
+    border: 4px solid chocolate;
+}
+.square_bar{
+    background-color: chocolate;
+    height: 70px;
+    width: 70px;
+    animation: myAnim 2s linear alternate infinite ;
+}
+.square_bar:hover{
+    animation-play-state: paused;
+}
+
+@keyframes myAnim {  
+    0% { margin-left: 0;}
+    100% { margin-left: 83%;}
+}
+
+
+
+/*Сердце*/
+.heart{
+    filter: grayscale(1);
+}
+.heart:hover{
+    transition-duration: 2s;
+    scale: 1.7;
+    filter: grayscale(0);
+}
+
+
+
+/*Летающие предметы*/
+
+h2{
+    text-align: center;
+}
+
+img {
+    width: 150px;
+}
+
+.container2 {
+    height: 500px;
+    border: 1px solid red;
+}
